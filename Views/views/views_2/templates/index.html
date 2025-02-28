@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Dados da View</title>
+</head>
+<body>
+    <h1>Dados da View</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome do Aluno</th>
+                <th>Nome da Escola</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in dados %}
+                <tr>
+                    <td>{{ item.nome_aluno }}</td>
+                    <td>{{ item.nome_escola }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
